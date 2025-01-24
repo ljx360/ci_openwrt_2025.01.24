@@ -12,7 +12,7 @@
 # use arg ssh,package
 
 
-name: Build lean+package,ljx,2024.12.11-test
+name: Build lean+package,ljx,2025.01.24-test
 
 on:
   repository_dispatch:
@@ -23,7 +23,7 @@ on:
       config_openwrt_url:
         description: 'input_openwrt_url'
         required: false
-        default: 'https://github.com/coolsnowwolf/lede'
+        default: 'https://github.com/openwrt/openwrt'
 
       config_openwrt_branch:
         description: 'input_openwrt_branch'
@@ -33,7 +33,7 @@ on:
       grub_title:
         description: 'grub_title'
         required: false
-        default: 'OpenWrt_LEDE_ljx'
+        default: 'OpenWrt_ljx'
 
       ssh:
         description: 'SSH connection to Actions'
