@@ -335,7 +335,7 @@ jobs:
     - name: run ljx.sh
       working-directory: /workdir
       run: |
-        echo "try run shell:${{ DIY_LJX_SH }}"
+        echo "try run shell:{$DIY_LJX_SH}"
         [ -f $GITHUB_WORKSPACE/$DIY_LJX_SH ] && echo exist $GITHUB_WORKSPACE/$DIY_LJX_SH && sudo chmod +x $GITHUB_WORKSPACE/$DIY_LJX_SH && $GITHUB_WORKSPACE/$DIY_LJX_SH
 
 
